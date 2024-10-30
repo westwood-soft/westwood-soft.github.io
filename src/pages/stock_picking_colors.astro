@@ -1,5 +1,10 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
+import screenshot3 from "../images/screenshot3-0.png";
+import screenshot4 from "../images/screenshot4-0.png";
+import screenshot5 from "../images/screenshot5-0.png";
+import color_list from "../images/colors_list.jpeg";
 ---
 
 <Layout title="Stock Picking Colors">
@@ -81,29 +86,23 @@ import Layout from "../layouts/Layout.astro";
             class="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32"
           >
             <div class="mx-1 max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-              <img
-                src="files/screenshot3-0.png"
-                alt="App screenshot"
-                width="390"
-                height="500"
+              <Image
+                src={screenshot3}
+                alt="Stock Picking with red background"
                 class="w-[24rem] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10"
               />
             </div>
             <div class="mx-1 max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-              <img
-                src="files/screenshot4-0.png"
-                alt="App screenshot"
-                width="390"
-                height="500"
+              <Image
+                src={screenshot4}
+                alt="Stock Picking with orange background"
                 class="w-[24rem] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10"
               />
             </div>
             <div class="mx-1 max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-              <img
-                src="files/screenshot5-0.png"
-                alt="App screenshot"
-                width="390"
-                height="500"
+              <Image
+                src={screenshot5}
+                alt="Stock Picking with green background"
                 class="w-[24rem] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10"
               />
             </div>
@@ -158,12 +157,10 @@ import Layout from "../layouts/Layout.astro";
           </div>
           <div class="relative overflow-hidden pt-16">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
-              <img
-                src="files/colors_list.jpeg"
-                alt="App screenshot"
+              <Image
+                src={color_list}
                 class="mx-auto rounded-xl shadow-2xl ring-1 ring-white/10"
-                width="390"
-                height="289"
+                alt="Stock Picking Color list view"
               />
               <div class="relative" aria-hidden="true">
                 <div
