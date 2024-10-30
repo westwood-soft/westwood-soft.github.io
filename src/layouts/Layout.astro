@@ -1,5 +1,5 @@
 ---
-import Nav from "../components/Nav.astro";
+// import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 
 interface Props {
@@ -29,15 +29,3 @@ const { title } = Astro.props;
     </div>
   </body>
 </html>
-
-<script>
-  const btnCloseMenu = document.getElementById("btn-close-menu");
-  btnCloseMenu?.addEventListener("click", () => {
-    document.getElementById("mobile-menu")?.classList.add("hidden");
-  });
-
-  const btnOpenMenu = document.getElementById("btn-open-menu");
-  btnOpenMenu?.addEventListener("click", () => {
-    document.getElementById("mobile-menu")?.classList.remove("hidden");
-  });
-</script>
