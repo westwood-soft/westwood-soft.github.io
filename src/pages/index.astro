@@ -1,9 +1,7 @@
 ---
+import { Image } from "astro:assets";
+import screenshot_dashboard from "../images/screenshot_dashboard.png";
 import Layout from "../layouts/Layout.astro";
-import Features from "../components/Features.astro";
-import Testimonial from "../components/Testimonial.astro";
-// import Pricing from "../components/Pricing.astro";
-// import Faq from "../components/Faq.astro";
 ---
 
 <Layout title="Westwood">
@@ -37,15 +35,27 @@ import Testimonial from "../components/Testimonial.astro";
                 class="text-odoo-gray">ood</span
               >
             </h1>
+            <h2 class="text-base font-semibold leading-7 text-indigo-600">
+              Effiziente Prozesse mit Odoo - Ihre Fulfillment-Experten
+            </h2>
             <p class="mt-6 text-lg leading-8 text-gray-300">
-              Wir sind Experten für Softwareentwicklung und
-              Odoo-Implementierung.
+              Wir entwickeln maßgeschneiderte Odoo-Lösungen, die Ihr Unternehmen
+              voranbringen &dash; vom Lager bis zur Auslieferung.
+            </p>
+            <p class="mt-6 text-lg leading-8 text-gray-300">
+              Bei Westwood Software optimieren wir Ihre Geschäftsprozesse mit
+              individuellen Odoo-Modulen.
+            </p>
+            <p class="mt-6 text-lg leading-8 text-gray-300">
+              Unsere Spezialität: Fulfillment-Lösungen für reibungslose Abläufe
+              in Lager, Versand und Bestellmanagement. Egal ob E-Commerce,
+              Produktion oder Handel – wir passen Odoo an Ihre Bedürfnisse an.
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="mailto:info@westwood.software"
                 class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-                >Kontaktieren Sie uns für maßgeschneiderte Lösungen</a
+                >Kostenlose Erstberatung sichern.</a
               >
             </div>
           </div>
@@ -80,9 +90,213 @@ import Testimonial from "../components/Testimonial.astro";
       </div>
     </div>
 
-    <Features />
-    <Testimonial />
-    <!-- <Pricing /> -->
-    <!-- <Faq /> -->
+    <!-- Leistungen Section -->
+    <div class="mt-32 sm:mt-56">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl sm:text-center">
+          <h2 class="text-base font-semibold leading-7 text-indigo-600">
+            Leistungen
+          </h2>
+          <p class="mt-4 text-lg leading-8 text-gray-600">
+            Unsere Expertise für Ihre individuellen Anforderungen.
+          </p>
+          <div class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2">
+            <div class="relative rounded-lg bg-white p-6 shadow-md">
+              <div class="text-base font-semibold leading-7 text-gray-900">
+                ✈️ Fulfillment-Optimierung
+              </div>
+              <p class="mt-2 text-base leading-7 text-gray-600">
+                Automatisieren Sie Auftragsabwicklung und Lagerverwaltung –
+                weniger Fehler, mehr Geschwindigkeit.
+              </p>
+            </div>
+            <div class="relative rounded-lg bg-white p-6 shadow-md">
+              <div class="text-base font-semibold leading-7 text-gray-900">
+                🏭 Individuelle Module
+              </div>
+              <p class="mt-2 text-base leading-7 text-gray-600">
+                Von der Idee bis zur Umsetzung: Odoo-Lösungen, die genau zu
+                Ihrem Unternehmen passen.
+              </p>
+            </div>
+            <div class="relative rounded-lg bg-white p-6 shadow-md">
+              <div class="text-base font-semibold leading-7 text-gray-900">
+                🧩 Branchenübergreifende Expertise
+              </div>
+              <p class="mt-2 text-base leading-7 text-gray-600">
+                Ob Logistik, Handel oder Produktion – wir finden die passende
+                Lösung für Sie.
+              </p>
+            </div>
+            <div class="relative rounded-lg bg-white p-6 shadow-md">
+              <div class="text-base font-semibold leading-7 text-gray-900">
+                🆘 Support & Weiterentwicklung
+              </div>
+              <p class="mt-2 text-base leading-7 text-gray-600">
+                Langfristige Betreuung und Updates, damit Ihr System mitwächst.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Über uns Section -->
+    <div class="mx-auto mt-32 max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl sm:text-center">
+        <h2 class="text-base font-semibold leading-7 text-indigo-600">
+          Über uns
+        </h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600">
+          Wir sind Westwood Software – ein Team aus erfahrenen Entwicklern mit
+          Leidenschaft für Odoo. Unser Ziel: Ihre Prozesse effizienter machen
+          und Ihr Unternehmen stärken.
+        </p>
+        <div class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="relative rounded-lg bg-white p-6 shadow-md">
+            <h3 class="text-lg font-semibold leading-7 text-gray-900">
+              Standort
+            </h3>
+            <p class="mt-2 text-base leading-7 text-gray-600">
+              Mit Standort im rheinischen Westerwald unterstützen wir Kunden
+              deutschlandweit.
+            </p>
+          </div>
+          <div class="relative rounded-lg bg-white p-6 shadow-md">
+            <h3 class="text-lg font-semibold leading-7 text-gray-900">
+              Erfahrung
+            </h3>
+            <p class="mt-2 text-base leading-7 text-gray-600">
+              Jahrzehntelange Erfahrung in der Entwicklung maßgeschneiderter
+              Softwarelösungen.
+            </p>
+          </div>
+          <div class="relative rounded-lg bg-white p-6 shadow-md">
+            <h3 class="text-lg font-semibold leading-7 text-gray-900">
+              Mission
+            </h3>
+            <p class="mt-2 text-base leading-7 text-gray-600">
+              Effiziente Prozesse und innovative Lösungen für nachhaltigen
+              Erfolg.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+      <dl
+        class="mx-auto grid max-w-2xl gap-x-6 gap-y-10 text-base leading-7 text-gray-600 lg:mx-0 lg:max-w-none lg:gap-x-8 lg:gap-y-16"
+      >
+        <p class="text-lg text-gray-600"></p>
+      </dl>
+    </div>
+    <!-- Testimonial section -->
+    <div class="mt-32 sm:mt-56">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl sm:text-center">
+          <h2 class="text-base font-semibold leading-7 text-indigo-600">
+            Beispiele für unsere Erfolge
+          </h2>
+          <p
+            class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          >
+            Wir helfen Ihnen gerne, unser nächster Erfolg zu werden!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="relative z-10 mt-32 bg-gray-900 pb-20 sm:mt-56 sm:pb-24 xl:pb-0"
+    >
+      <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
+        <div
+          class="absolute left-[calc(50%-19rem)] top-[calc(50%-36rem)] transform-gpu blur-3xl"
+        >
+          <div
+            class="aspect-[1097/1023] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-25"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+          >
+          </div>
+        </div>
+      </div>
+      <div
+        class="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch"
+      >
+        <div class="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
+          <div
+            class="aspect-2/1 xl:aspect-auto relative h-full md:-mx-8 xl:mx-0"
+          >
+            <img
+              class="inset-0 size-full rounded-2xl bg-gray-800 object-cover shadow-2xl"
+              src="https://images.unsplash.com/photo-1664382953403-fc1ac77073a0?q=80&w=2344&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w2102&q=80"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24"
+        >
+          <div class="relative mb-10 overflow-hidden pt-16">
+            <div
+              class="relative mx-auto max-w-7xl overflow-hidden px-6 lg:px-8"
+            >
+              <Image
+                src={screenshot_dashboard}
+                alt="Fulfillment Dashboard"
+                class="w-full rounded-xl shadow-2xl ring-1 ring-gray-900/10"
+                width={1144}
+                height={500}
+                format="webp"
+                quality={80}
+              />
+            </div>
+          </div>
+          <figure class="relative isolate pt-6 sm:pt-12">
+            <svg
+              viewBox="0 0 162 128"
+              fill="none"
+              aria-hidden="true"
+              class="absolute left-0 top-0 -z-10 h-32 stroke-white/20"
+            >
+              <use href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" x="86"></use>
+            </svg>
+            <blockquote
+              class="text-xl font-semibold leading-8 text-white sm:text-2xl sm:leading-9"
+            >
+              <p>
+                Wir haben einem Fulfillment-Dienstleister geholfen, seine
+                Effizienz zu steigern und den täglichen Versand von tausenden
+                Paketen zu meistern – alles dank unserer maßgeschneiderten
+                Odoo-Lösung. Durch die Integration von Odoo konnten wir den
+                gesamten Fulfillment-Prozess optimieren: Automatischer Import
+                und Freigabe von Versandaufträgen, effiziente Lagerhaltung,
+                nahtlose Anbindung an Versanddienstleister inklusive
+                Label-Ausdruck und Zollabfertigung sowie umfassender Support
+                über das integrierte Ticketsystem sind nur einige der Vorteile,
+                die wir umsetzen konnten.
+              </p>
+            </blockquote>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <!-- CTA section -->
+    <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+      <div class="text-center">
+        <p class="text-lg font-semibold leading-8 text-gray-900">
+          Lassen Sie uns gemeinsam Ihre Abläufe verbessern. Kontaktieren Sie uns
+          für eine unverbindliche Beratung!
+        </p>
+        <div class="mt-10 flex items-center justify-center">
+          <a
+            href="mailto:info@westwood.software"
+            class="rounded-md bg-odoo-primary px-6 py-3 text-lg font-semibold text-white shadow-sm hover:bg-odoo-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-odoo-primary"
+          >
+            Jetzt Kontakt aufnehmen
+          </a>
+        </div>
+      </div>
+    </div>
   </main>
 </Layout>
