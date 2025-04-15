@@ -1,9 +1,9 @@
 ---
 title: "Optimierung von Fulfillment-Prozessen mit Odoo"
 description: "Wie Sie Ihre Logistik mit Odoo-Automatisierung auf das nächste Level bringen"
-pubDate: 2024-03-15
+pubDate: 2025-04-08
 author: "Michael Dahl"
-image: "/blog/fulfillment.jpg"
+image: "../../images/blog/fulfillment.jpg"
 ---
 
 **Die Anforderungen an Logistik- und Fulfillment-Dienstleister steigen stetig: Kunden erwarten schnellere Lieferungen, niedrigere Kosten und absolute Transparenz. Gleichzeitig wird die Prozesslandschaft durch Multi-Channel-Vertrieb, globale Märkte und komplexe Retouren immer anspruchsvoller. Ein leistungsfähiges ERP-System ist hier unerlässlich. Odoo bietet eine hervorragende, integrierte Basis – doch stößt die Standardversion bei sehr spezifischen Fulfillment-Anforderungen oft an ihre Grenzen. Die Lösung? Maßgeschneiderte Anpassungen, die Ihre Prozesse nicht nur abbilden, sondern aktiv optimieren.**
