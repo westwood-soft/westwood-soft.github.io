@@ -1,6 +1,6 @@
 ---
 title: "Nie wieder wichtige Lageraufträge übersehen: Odoo Pickings farblich hervorheben"
-description: "Wie Sie Ihre Logistik mit Odoo-Automatisierung auf das nächste Level bringen"
+description: "Klarheit erhöhen und Fehler reduzieren"
 pubDate: 2025-04-15
 author: "Michael Dahl"
 image: "../../images/blog/screenshot_stock_pickiong_colors_wide.png"
